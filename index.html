@@ -3,31 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
+    <title>Agro forte</title>
     <style>
-        /* Configurações básicas da página */
         body {
+            background-color: #1D4221; /* O verde escuro que estava no seu código */
+            color: white;
+            font-family: "Bai Jamjuree", sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end; /* Alinha o conteúdo verticalmente a partir do meio/fim */
+            align-items: center; /* Alinha verticalmente no meio da página */
         }
 
         /* Container que segura os retângulos no lado esquerdo */
         .container-esquerdo {
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Espaço entre o primeiro e o segundo retângulo */
-            margin-left: 50px; /* Afasta os retângulos da borda esquerda da tela */
-            margin-bottom: 50px; /* Afasta da borda inferior */
+            gap: 20px; /* Espaço entre os elementos */
+            margin-left: 50px; /* Afasta os retângulos da borda esquerda */
         }
 
-        /* Estilização geral dos retângulos (tamanho médio e pontas arredondadas) */
+        /* Estilização dos retângulos médios com pontas arredondadas */
         .retangulo {
-            width
+            width: 300px;  
+            height: 150px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .verde-claro {
+            background-color: #64A712; /* O verde claro do seu botão original */
+        }
+
+        .laranja {
+            background-color: #e67e22; /* Cor laranja */
+        }
+
+        /* Botão funcional totalmente verde e sem texto */
+        .botao-link {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background-color: #27ae60; 
+            border-radius: 50%; 
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-esquerdo">
+        
+        <div class="retangulo verde-claro"></div>
+        
+        <div class="retangulo laranja"></div>
+        
+        <a href="pagina2.html" target="_blank">
+            <button class="botao-link" type="button"></button>
+        </a>
+        
+    </div>
+
+</body>
+</html>
 
