@@ -1,14 +1,14 @@
 
 :root {
     --fundo-tela: green;
-    --fundo-bloco: lightorange;
+    --fundo-bloco: ivory;
     --texto: black;
     --titulo-botao: darkgreen;
 }
 
 .dark-mode {
-    --fundo-tela: black;
-    --fundo-bloco: darkorange;
+    --fundo-tela: dimgray;
+    --fundo-bloco: darkslategray;
     --texto: white;
     --titulo-botao: lightgreen;
 }
