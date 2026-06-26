@@ -36,7 +36,7 @@ body {
 
 
 .card, .bloco {
-    background-color: var(--bg-bloco);
+    background-color: green(--bg-bloco);
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #cccccc;
@@ -59,7 +59,7 @@ input[type="text"] {
     flex: 1;
     padding: 10px;
     border: 1px solid #aaaaaa;
-    background-color: var(--bg-bloco);
+    background-color: orange(--bg-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
 }
@@ -77,7 +77,7 @@ button:hover {
 }
 
 .btn-primary {
-    background-color: var(verde);
+    background-color: green(verde);
     color: #ffffff;
 }
 
