@@ -1,0 +1,163 @@
+
+:root {
+    --bg-primary: #f4f7f5;
+    --bg-card: #ffffff;
+    --text-main: #2c3e50;
+    --color-agro: #27ae60;
+    --color-agro-hover: #219653;
+    --color-accent: #e67e22;
+    --color-accent-hover: #d35400;
+    --transition-smooth: all 0.3s ease;
+}
+
+/* Modo Escuro */
+.dark-mode {
+    --bg-primary: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #e0e0e0;
+    --color-agro: #2ecc71;
+}
+{
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--bg-card);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    color: var(--color-agro);
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+    flex: 1;
+}
+.card {
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: var(--transition-smooth);
+}
+
+.agro-card:hover {
+    transform: translateY(-4px);
+    border-left: 5px solid var(--color-agro);
+}
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background-color: var(--bg-card);
+    color: var(--text-main);
+}
+
+input[type="text"]:focus {
+    border-color: var(--color-agro);
+}
+
+/* Botões com efeitos visuais Hover e Transições */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--color-agro);
+    color: #fff;
+    padding: 0 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-agro-hover);
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 12px 30px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-accent:hover {
+    background-color: var(--color-accent-hover);
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
+}
+
+.hidden-element {
+    display: none !important;
+}
+
+#dynamic-response {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Rodapé */
+.main-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--bg-card);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .btn-primary {
+        padding: 12px;
+    }
+
+    .main-header h1 {
+        font-size: 1.4rem;
+    }
+}
