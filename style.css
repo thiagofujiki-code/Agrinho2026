@@ -1,22 +1,22 @@
 
 :root {
-    --bg-tela: #f4f4f4;
-    --bg-bloco: #ffffff;
-    --texto: #333333;
-    --verde-agro: #27ae60;
+    --fundo-tela: green;
+    --fundo-bloco: orange;
+    --texto: black;
+    --titulo-botao: darkgreen;
 }
 
 .dark-mode {
-    --bg-tela: #121212;
-    --bg-bloco: #1e1e1e;
-    --texto: #e0e0e0;
-    --verde-agro: #2ecc71;
+    --fundo-tela: black;
+    --fundo-bloco: darkorange;
+    --texto: white;
+    --titulo-botao: lightgreen;
 }
 
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--bg-tela);
+    background-color: var(--fundo-tela);
     color: var(--texto);
     padding: 20px;
     display: flex;
@@ -31,12 +31,12 @@ body {
 }
 
 .main-header h1 {
-    color: var(--verde-agro);
+    color: var(--titulo-botao);
 }
 
 
 .card, .bloco {
-    background-color: green(--bg-bloco);
+    background-color: var(--fundo-bloco);
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #cccccc;
@@ -59,7 +59,7 @@ input[type="text"] {
     flex: 1;
     padding: 10px;
     border: 1px solid #aaaaaa;
-    background-color: orange(--bg-bloco);
+    background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
 }
@@ -77,13 +77,13 @@ button:hover {
 }
 
 .btn-primary {
-    background-color: green(verde);
-    color: #ffffff;
+    background-color: var(--titulo-botao);
+    color: white;
 }
 
 .btn-accent {
-    background-color: #e67e22; /* Laranja */
-    color: #ffffff;
+    background-color: orange; /* Laranja */
+    color: white;
     margin-top: 15px;
     width: 100%;
 }
