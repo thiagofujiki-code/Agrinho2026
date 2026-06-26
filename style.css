@@ -3,7 +3,7 @@
     --fundo-tela: green;
     --fundo-bloco: ivory;
     --texto: black;
-    --titulo-botao: darkgreen;
+    --titulo-botao: darkorange;
 }
 
 .dark-mode {
@@ -58,7 +58,7 @@ body {
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 1px solid #aaaaaa; /*borda cinza escuro*/
+    border: 2px solid var(--titulo-botao) /*laranja escuro*/
     background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
