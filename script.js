@@ -1,3 +1,4 @@
+alert("O JavaScript foi carregado com sucesso!");
 
 const btnSubmitName = document.getElementById('btn-submit-name');
 const inputName = document.getElementById('user-name');
