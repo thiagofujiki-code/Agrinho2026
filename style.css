@@ -1,7 +1,7 @@
 
 :root {
     --fundo-tela: green;
-    --fundo-bloco: orange;
+    --fundo-bloco: lightorange;
     --texto: black;
     --titulo-botao: darkgreen;
 }
@@ -39,7 +39,7 @@ body {
     background-color: var(--fundo-bloco);
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #cccccc;
+    border: 1px solid #cccccc; /* borda cinza*/
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -58,7 +58,7 @@ body {
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #aaaaaa; /*borda cinza escuro*/
     background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
