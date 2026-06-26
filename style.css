@@ -1,72 +1,53 @@
 
 :root {
-    --bg-primary: #f4f7f5;
-    --bg-card: #ffffff;
-    --text-main: #2c3e50;
-    --color-agro: #27ae60;
-    --color-agro-hover: #219653;
-    --color-accent: #e67e22;
-    --color-accent-hover: #d35400;
-    --transition-smooth: all 0.3s ease;
+    --bg-tela: #f4f4f4;
+    --bg-bloco: #ffffff;
+    --texto: #333333;
+    --verde-agro: #27ae60;
 }
 
-/* Modo Escuro */
 .dark-mode {
-    --bg-primary: #121212;
-    --bg-card: #1e1e1e;
-    --text-main: #e0e0e0;
-    --color-agro: #2ecc71;
+    --bg-tela: #121212;
+    --bg-bloco: #1e1e1e;
+    --texto: #e0e0e0;
+    --verde-agro: #2ecc71;
 }
-{
-    font-family: sans-serif;
-}
+
 
 body {
-    background-color: var(--bg-primary);
-    color: var(--text-main);
-    transition: var(--transition-smooth);
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-tela);
+    color: var(--texto);
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Cabeçalho */
+
 .main-header {
-    background-color: var(--bg-card);
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
 }
 
 .main-header h1 {
-    font-size: 1.8rem;
-    color: var(--color-agro);
-    margin-bottom: 10px;
-}
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 15px;
-    flex: 1;
-}
-.card {
-    background-color: var(--bg-card);
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-    transition: var(--transition-smooth);
+    color: var(--verde-agro);
 }
 
-.agro-card:hover {
-    transform: translateY(-4px);
-    border-left: 5px solid var(--color-agro);
+
+.card, .bloco {
+    background-color: var(--bg-bloco);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+/* Formulário de pergunta e resposta */
 .form-label {
     display: block;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 10px;
-    font-size: 1.1rem;
 }
 
 .input-group {
@@ -76,88 +57,55 @@ body {
 
 input[type="text"] {
     flex: 1;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    font-size: 1rem;
-    background-color: var(--bg-card);
-    color: var(--text-main);
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    background-color: var(--bg-bloco);
+    color: var(--texto);
+    transition: background-color 0.3s ease;
 }
 
-input[type="text"]:focus {
-    border-color: var(--color-agro);
-}
-
-/* Botões com efeitos visuais Hover e Transições */
 button {
-    cursor: pointer;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.85; 
 }
 
 .btn-primary {
-    background-color: var(--color-agro);
-    color: #fff;
-    padding: 0 25px;
-}
-
-.btn-primary:hover {
-    background-color: var(--color-agro-hover);
-}
-
-.btn-secondary {
-    background-color: #7f8c8d;
-    color: #fff;
-    padding: 8px 15px;
-    font-size: 0.85rem;
+    background-color: var(verde);
+    color: #ffffff;
 }
 
 .btn-accent {
-    background-color: var(--color-accent);
-    color: white;
-    padding: 12px 30px;
+    background-color: #e67e22; /* Laranja */
+    color: #ffffff;
     margin-top: 15px;
     width: 100%;
 }
 
-.btn-accent:hover {
-    background-color: var(--color-accent-hover);
-    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.3);
-}
-
 .hidden-element {
-    display: none !important;
+    display: none;
 }
 
 #dynamic-response {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
+    margin-top: 15px;
     text-align: center;
-    font-size: 1.1rem;
 }
 
-/* Rodapé */
+/* Rodapé simples */
 .main-footer {
     text-align: center;
-    padding: 15px;
-    background-color: var(--bg-card);
+    margin-top: 20px;
     font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
     .input-group {
         flex-direction: column;
-    }
-    
-    .btn-primary {
-        padding: 12px;
-    }
-
-    .main-header h1 {
-        font-size: 1.4rem;
     }
 }
