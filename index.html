@@ -3,71 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro forte</title>
-    <style>
-        body {
-            background-color: #1D4221; /* O verde escuro que estava no seu código */
-            color: white;
-            font-family: "Bai Jamjuree", sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            height: 100vh;
-            display: flex;
-            align-items: center; /* Alinha verticalmente no meio da página */
-        }
-
-        /* Container que segura os retângulos no lado esquerdo */
-        .container-esquerdo {
-            display: flex;
-            flex-direction: column;
-            gap: 20px; /* Espaço entre os elementos */
-            margin-left: 50px; /* Afasta os retângulos da borda esquerda */
-        }
-
-        /* Estilização dos retângulos médios com pontas arredondadas */
-        .retangulo {
-            width: 300px;  
-            height: 150px; 
-            border-radius: 20px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .verde-claro {
-            background-color: #64A712; /* O verde claro do seu botão original */
-        }
-
-        .laranja {
-            background-color: #e67e22; /* Cor laranja */
-        }
-
-        /* Botão funcional totalmente verde e sem texto */
-        .botao-link {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background-color: #27ae60; 
-            border-radius: 50%; 
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Tecnologia no Agro - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container-esquerdo">
+    <header class="main-header">
+        <h1>Como a tecnologia age no agro atualmente</h1>
         
-        <div class="retangulo verde-claro"> alguma coisa pra ver se funciona</div>
-        
-        <div class="retangulo laranja"> outra alguma coisa pra ver se funciona</div>
-        
-        <a href="pagina2.html" target="_blank">
-            <button class="botao-link" type="button"> butao pra ir pra proxima pag</button>
-        </a>
-        
-    </div>
+        <div class="accessibility-controls">
+            <button id="toggle-theme-btn" class="btn-secondary">Alternar Modo Escuro</button>
+        </div>
+    </header>
 
+    <main class="container">
+        
+        <section id="welcome-section" class="card">
+            <form id="form-user" onsubmit="event.preventDefault();">
+                <label for="user-name" class="form-label">Qual seu nome?</label>
+                <div class="input-group">
+                    <input type="text" id="user-name" placeholder="Digite seu nome aqui..." required>
+                    <button type="button" id="btn-submit-name" class="btn-primary">Enviar</button>
+                </div>
+            </form>
+            
+            <div id="dynamic-response" class="hidden-element">
+                <p id="welcome-message"></p>
+                <button id="btn-ready" class="btn-accent">Estou preparado!</button>
+            </div>
+        </section>
+
+        <section id="content-section" class="hidden-element">
+            
+            <article class="card agro-card">
+                <h2>Drones e Monitoramento Aéreo</h2>
+                <p>Os drones equipados com câmeras multiespectrais conseguem sobrevoar hectares de plantação em minutos. Eles identificam pragas, falhas de irrigação e a saúde real das folhas antes mesmo que o olho humano consiga notar o problema.</p>
+            </article>
+
+            <article class="card agro-card">
+                <h2>Sensores IoT e Solo Inteligente</h2>
+                <p>Sensores enterrados no solo coletam dados em tempo real sobre umidade, temperatura e nível de nutrientes. Essas informações são enviadas diretamente para o celular do produtor, evitando o desperdício de água e fertilizantes.</p>
+            </article>
+
+            <article class="card agro-card">
+                <h2>Maquinários Autônomos</h2>
+                <p>Tratores e colheitadeiras guiados por GPS de alta precisão conseguem trabalhar dia e noite com margens de erro de centímetros. Isso otimiza o combustível e acelera o processo de colheita de maneira sustentável.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Projeto Agrinho - Tecnologia e Sustentabilidade no Campo.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
