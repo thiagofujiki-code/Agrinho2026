@@ -1,15 +1,15 @@
 :root {
-    --bg-tela: #f4f4f4;
-    --bg-bloco: #ffffff;
+    --fundo-tela: #f4f4f4;
+    --fundo-bloco: #ffffff;
     --texto: #333333;
-    --verde-agro: #ff6600; /* Laranja forte para o título e elementos no modo claro */
+    --titulo-botao: #ff6600; /* Laranja forte para o título e elementos no modo claro */
 }
 
 .dark-mode {
-    --bg-tela: #0d1117;    /* Fundo escuro oficial do GitHub */
-    --bg-bloco: #21262d;   /* Blocos cinza médio oficiais do GitHub */
+    --fundo-tela: #0d1117;    /* Fundo escuro oficial do GitHub */
+    --fundo-bloco: #21262d;   /* Blocos cinza médio oficiais do GitHub */
     --texto: #c9d1d9;      /* Texto claro */
-    --verde-agro: #2ecc71; /* Verde destacado para o modo escuro */
+    --titulo-botao: #2ecc71; /* Verde destacado para o modo escuro */
 }
 body {
     font-family: Arial, sans-serif;
