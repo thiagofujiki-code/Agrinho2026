@@ -1,8 +1,8 @@
 :root {
     --fundo-tela: #f0f2f5 !important; /*cinza*/
-    --fundo-bloco: #ff7a1a !important;
+    --fundo-bloco: #ff6600!important;/* laranja*/
     --texto: #333333;
-    --titulo-botao: #ff6600; /* Laranja forte para o título e elementos no modo claro */
+    --titulo-botao: #212529;
 }
 
 .dark-mode {
