@@ -1,5 +1,5 @@
 :root {
-    --fundo-tela: #f0f2f5 !important; /*cinza*/
+    --fundo-tela: gray !important; /*cinza*/
     --fundo-bloco: #ff6600!important;/* laranja*/
     --texto: #333333;
     --titulo-botao: #212529;
