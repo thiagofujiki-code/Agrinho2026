@@ -6,8 +6,8 @@
 }
 
 .dark-mode {
-    --fundo-tela: #0d1117;    /* Fundo escuro oficial do GitHub */
-    --fundo-bloco: #21262d;   /* Blocos cinza médio oficiais do GitHub */
+    --fundo-tela: #0d1117;    /* Fundo escuro */
+    --fundo-bloco: #21262d;   /* cinza médio */
     --texto: #c9d1d9;      /* Texto claro */
     --titulo-botao: #2ecc71; /* Verde destacado para o modo escuro */
 }
@@ -93,12 +93,6 @@ button:hover {
     margin-top: 15px;
     text-align: center;
 }
-
-/* Rodapé simples */
-.main-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
