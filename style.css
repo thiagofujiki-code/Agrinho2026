@@ -7,8 +7,8 @@
 }
 
 .dark-mode {
-    --fundo-tela: #0d1117;*/ cinza escuro/*
-    --fundo-bloco: #161b22;*/ cinza fosco/*
+    --fundo-tela: #22252a;*/ cinza escuro/*
+    --fundo-bloco: #2c3038;*/ cinza fosco/*
     --texto: #c9d1d9;*/branco/*
     --titulo-botao: lightgreen;
 }
