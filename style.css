@@ -1,6 +1,6 @@
 :root {
-    --fundo-tela: #f4f4f4;
-    --fundo-bloco: orange;
+    --fundo-tela: #808080; /*cinza*/
+    --fundo-bloco: #ff6600;
     --texto: #333333;
     --titulo-botao: #ff6600; /* Laranja forte para o título e elementos no modo claro */
 }
