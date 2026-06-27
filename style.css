@@ -106,3 +106,8 @@ button:hover {
         flex-direction: column;
     }
 }
+/* Força o texto digitado a ficar preto */
+input {
+    color: #000000 !important;
+}
+
