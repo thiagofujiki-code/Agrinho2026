@@ -10,6 +10,12 @@
     --fundo-bloco: #21262d;   /* cinza médio */
     --texto: #c9d1d9;      /* Texto claro */
     --titulo-botao: #2ecc71; /* Verde destacado para o modo escuro */
+
+    .dark-mode input[type="text"] {
+    background-color: #ffffff !important; /* Força o fundo do campo a ficar branco no modo escuro */
+    color: #000000 !important;            /* Garante que o texto digitado continue preto e legível */
+}
+
 }
 body {
     font-family: Arial, sans-serif;
