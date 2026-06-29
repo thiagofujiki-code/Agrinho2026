@@ -1,38 +1,117 @@
-alert("O JavaScript foi carregado com sucesso!");
+ :root {
+    --fundo-tela: gray !important; /*cinza*/
+    --fundo-bloco: #ff6600 !important; /* laranja*/
+    --texto: #333333;
+    --titulo-botao: #212529;
+}
 
-const btnSubmitName = document.getElementById('btn-submit-name');
-const inputName = document.getElementById('user-name');
-const dynamicResponseDiv = document.getElementById('dynamic-response');
-const welcomeMessage = document.getElementById('welcome-message');
-const btnReady = document.getElementById('btn-ready');
-const contentSection = document.getElementById('content-section');
-const toggleThemeBtn = document.getElementById('toggle-theme-btn');
+.dark-mode {
+    --fundo-tela: #0d1117;    /* Fundo escuro */
+    --fundo-bloco: #21262d;   /* cinza médio */
+    --texto: #c9d1d9;         /* Texto claro */
+    --titulo-botao: #2ecc71;  /* Verde destacado para o modo escuro */
+}
 
-// Função para processar o nome e exibir a saudação inicial
-btnSubmitName.addEventListener('click', () => {
-    // Armazena o nome digitado em uma variável tirando espaços extras
-    const userName = inputName.value.trim();
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo-tela);
+    color: var(--texto);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    // Valida se o campo não está vazio
-    if (userName !== "") {
-        // Altera o texto da mensagem de forma funcional e personalizada
-        welcomeMessage.innerHTML = `Olá <strong>${userName}</strong>, fico feliz em te ter aqui. Agora vamos aprender sobre a tecnologia no agro!`;
-        
-        // Remove a classe para mostrar a mensagem e o próximo botão
-        dynamicResponseDiv.classList.remove('hidden-element');
-    } else {
-        alert("Por favor, digite o seu nome antes de enviar.");
+
+.cabecalho-principal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho-principal h1 {
+    color: var(--titulo-botao);
+}
+
+
+.conteiner {
+
+}
+
+
+.cartao {
+    background-color: var(--fundo-bloco);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* borda cinza*/
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.rotulo-formulario {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.grupo-entrada {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px
+    border: 2px solid var(--titulo-botao); 
+    background-color: var(--fundo-bloco);
+    color: var(--texto);
+    transition: background-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.85; 
+}
+
+.btn-primario {
+    background-color: var(--titulo-botao);
+    color: white;
+
+.btn-secundario {
+    
+}
+
+.btn-destaque {
+    background-color: darkgreen; /* verde escuro */
+    color: white;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.elemento-oculto {
+    display: none;
+}
+
+
+#resposta-dinamica {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .grupo-entrada {
+        flex-direction: column;
     }
-});
+}
 
-// Função para revelar o conteúdo principal do site
-btnReady.addEventListener('click', () => {
-    // Remove a classe que esconde a seção sobre tecnologia no agro
-    contentSection.classList.remove('hidden-element');
-});
-
-// Função para alternar o Modo Escuro (Melhoria de Usabilidade)
-toggleThemeBtn.addEventListener('click', () => {
-    // Adiciona ou remove a classe .dark-mode do body a cada clique
-    document.body.classList.toggle('dark-mode');
-});
+input {
+    color: #000000 !important; /* Força o texto digitado a ficar preto */
+}
