@@ -6,6 +6,7 @@ O tema do Agrinho "Agro forte, futuro sustentável: equilíbrio entre produção
 O site foi criado pensando no tema do agrinho 2026, que diz: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente, neste tema ele cita o equilíbrio entre a produção e o meio ambiente, e para alcançar este equilíbrio, as Tecnologias do agro atualmente sao fundamentais, pois com elas pode ser reduzido a quantidade de recursos naturais perdidos e além de que o agricultor protege mais o meio ambiente, pois ele usa drones para aplicação de produtos, e estes drones conseguem identificar exatamente os locais que precisam, evitando prejudicar áreas da natureza
 
 Instruções de uso:
+
 ​1. Identificação Inicial
 ​Assim que a página carregar,irá ter um campo escrito "Qual seu nome?".
 ​Clique dentro da caixa branca e digite o seu nome
