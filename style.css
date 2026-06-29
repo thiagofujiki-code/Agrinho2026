@@ -1,6 +1,6 @@
- :root {
+:root {
     --fundo-tela: gray !important; /*cinza*/
-    --fundo-bloco: #ff6600 !important; /* laranja*/
+    --fundo-bloco: #ff6600!important;/* laranja*/
     --texto: #333333;
     --titulo-botao: #212529;
 }
@@ -8,10 +8,9 @@
 .dark-mode {
     --fundo-tela: #0d1117;    /* Fundo escuro */
     --fundo-bloco: #21262d;   /* cinza médio */
-    --texto: #c9d1d9;         /* Texto claro */
-    --titulo-botao: #2ecc71;  /* Verde destacado para o modo escuro */
+    --texto: #c9d1d9;      /* Texto claro */
+    --titulo-botao: #2ecc71; /* Verde destacado para o modo escuro */
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: var(--fundo-tela);
@@ -22,6 +21,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 .cabecalho-principal {
     text-align: center;
     margin-bottom: 20px;
@@ -31,11 +31,8 @@ body {
     color: var(--titulo-botao);
 }
 
-.conteiner {
-    
-}
 
-.cartao, .cartao-agro {
+.cartao, .bloco {
     background-color: var(--fundo-bloco);
     padding: 20px;
     margin-bottom: 20px;
@@ -43,6 +40,7 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Formulário de pergunta e resposta */
 .rotulo-formulario {
     display: block;
     font-weight: bold;
@@ -57,7 +55,7 @@ body {
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid var(--titulo-botao); 
+    border: 2px solid var(--titulo-botao)
     background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
@@ -80,10 +78,6 @@ button:hover {
     color: white;
 }
 
-.btn-secundario {
-    /* Mantém as propriedades padrões dos botões */
-}
-
 .btn-destaque {
     background-color: darkgreen; /* verde escuro */
     color: white;
@@ -99,6 +93,7 @@ button:hover {
     margin-top: 15px;
     text-align: center;
 }
+}
 
 @media (max-width: 600px) {
     .grupo-entrada {
@@ -107,5 +102,6 @@ button:hover {
 }
 
 input {
-    color: #000000 !important; /* Força o texto digitado a ficar preto */
+    color: #000000 !important;/* Força o texto digitado a ficar preto */
 }
+ 
