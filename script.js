@@ -1,39 +1,38 @@
- alert("O JavaScript foi carregado com sucesso!");
+ Alert("O JavaScript foi carregado com sucesso!");
 
-// IDs alterados para português conforme o novo HTML
-const botaoEnviarNome = document.getElementById('botao-enviar-nome');
-const entradaNome = document.getElementById('nome-usuario');
-const divRespostaDinamica = document.getElementById('resposta-dinamica');
-const mensagemBoasVindas = document.getElementById('mensagem-boas-vindas');
-const botaoPreparado = document.getElementById('botao-preparado');
-const secaoConteudo = document.getElementById('secao-conteudo');
-const botaoAlternarTema = document.getElementById('botao-alternar-tema');
+const btnSubmitName = document.getElementById('botao-enviar-nome');
+const inputName = document.getElementById('nome-usuario');
+const dynamicResponseDiv = document.getElementById('resposta-dinamica');
+const welcomeMessage = document.getElementById('mensagem-boas-vindas');
+const btnReady = document.getElementById('botao-preparado');
+const contentSection = document.getElementById('secao-conteudo');
+const toggleThemeBtn = document.getElementById('botao-alternar-tema');
 
-// Função para processar o nome e exibir a mensagem inicial
-botaoEnviarNome.addEventListener('click', () => {
+// Função para processar o nome e exibir a saudação inicial
+btnSubmitName.addEventListener('click', () => {
     // Armazena o nome digitado em uma variável tirando espaços extras
-    const nomeUsuario = entradaNome.value.trim();
+    const userName = inputName.value.trim();
 
     // Valida se o campo não está vazio
-    if (nomeUsuario !== "") {
+    if (userName !== "") {
         // Altera o texto da mensagem de forma funcional e personalizada
-        mensagemBoasVindas.innerHTML = `Olá <strong>${nomeUsuario}</strong>, fico feliz em te ter aqui. Agora vamos aprender sobre a tecnologia no agro!`;
+        welcomeMessage.innerHTML = `Olá <strong>${userName}</strong>, fico feliz em te ter aqui. Agora vamos aprender sobre a tecnologia no agro!`;
         
-        // Remove a classe em português para mostrar a mensagem e o próximo botão
-        divRespostaDinamica.classList.remove('elemento-oculto');
+        // Remove a classe para mostrar a mensagem e o próximo botão
+        dynamicResponseDiv.classList.remove('elemento-oculto');
     } else {
         alert("Por favor, digite o seu nome antes de enviar.");
     }
 });
 
 // Função para revelar o conteúdo principal do site
-botaoPreparado.addEventListener('click', () => {
+btnReady.addEventListener('click', () => {
     // Remove a classe que esconde a seção sobre tecnologia no agro
-    secaoConteudo.classList.remove('elemento-oculto');
+    contentSection.classList.remove('elemento-oculto');
 });
 
 // Função para alternar o Modo Escuro (Melhoria de Usabilidade)
-botaoAlternarTema.addEventListener('click', () => {
+toggleThemeBtn.addEventListener('click', () => {
     // Adiciona ou remove a classe .dark-mode do body a cada clique
     document.body.classList.toggle('dark-mode');
 });
