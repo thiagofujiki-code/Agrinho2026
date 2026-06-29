@@ -1,3 +1,4 @@
+alert(java script ta funcionando)
 
 const btnSubmitName = document.getElementById('botao-enviar-nome');
 const inputName = document.getElementById('nome-usuario');
