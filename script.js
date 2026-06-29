@@ -1,4 +1,3 @@
- Alert("O JavaScript foi carregado com sucesso!");
 
 const btnSubmitName = document.getElementById('botao-enviar-nome');
 const inputName = document.getElementById('nome-usuario');
