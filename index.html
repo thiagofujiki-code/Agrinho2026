@@ -8,48 +8,46 @@
 </head>
 <body>
 
-    <header class="main-header">
+    <header class="cabecalho-principal">
         <h1>As principais tecnologias do agro atualmente</h1>
         
-        <div class="accessibility-controls">
-            <button id="toggle-theme-btn" class="btn-secondary">Alternar Modo Escuro</button>
+        <div class="controles-acessibilidade">
+            <button id="botao-alternar-tema" class="btn-secundario">Alternar Modo Escuro</button>
         </div>
     </header>
 
-    <main class="container">
+    <main class="conteiner">
         
-        <section id="welcome-section" class="card">
-            <form id="form-user" onsubmit="event.preventDefault();">
-                <label for="user-name" class="form-label">Qual seu nome?</label>
-                <div class="input-group">
-                    <input type="text" id="user-name" placeholder="Digite seu nome aqui..." required>
-                    <button type="button" id="btn-submit-name" class="btn-primary">Enviar</button>
+        <section id="secao-boas-vindas" class="cartao">
+            <form id="formulario-usuario" onsubmit="event.preventDefault();">
+                <label for="nome-usuario" class="rotulo-formulario">Qual seu nome?</label>
+                <div class="grupo-entrada">
+                    <input type="text" id="nome-usuario" placeholder="Digite seu nome aqui..." required>
+                    <button type="button" id="botao-enviar-nome" class="btn-primario">Enviar</button>
                 </div>
             </form>
             
-            <div id="dynamic-response" class="hidden-element">
-                <p id="welcome-message"></p>
-                <button id="btn-ready" class="btn-accent">Estou preparado!</button>
+            <div id="resposta-dinamica" class="elemento-oculto">
+                <p id="mensagem-boas-vindas"></p>
+                <button id="botao-preparado" class="btn-destaque">Estou preparado!</button>
             </div>
         </section>
 
-        <section id="content-section" class="hidden-element">
+        <section id="secao-conteudo" class="elemento-oculto">
             
-            <article class="card agro-card">
-                <h2>Drones e Monitoramento/</h2>
-                <h2>Sensoriamento remoto</h2>
-                <p> Os drones voam sobre uma determinada área enquanto capturam fotos/imagens, essas fotos são utilizadas para encontrar pragas, falhas, falta de água, além disso, os drones também são utilizados para  aplicação de produtos nas plantações, por ser mais preciso e mais prático.</p>
+            <article class="cartao">
+                <h2>Drones e Monitoramento / Sensoriamento remoto</h2>
+                <p>Os drones voam sobre uma determinada área enquanto capturam fotos/imagens, essas fotos são utilizadas para encontrar pragas, falhas, falta de água, além disso, os drones também são utilizados para aplicação de produtos nas plantações, por ser mais preciso e mais prático.</p>
             </article>
 
-            <article class="card agro-card">
+            <article class="cartao">
                 <h2>GPS Agrícola</h2>
-                <p>O GPS Agrícola possui diversas funções, tendo o mapeamento de plantações como um dos seus principais,  porém ele também ajuda na localização de amostras do solo, coleta e análisede dados da plantação, com isso essa tecnologia melhora a qualidade dos processos agrícolas.</p>
+                <p>O GPS Agrícola possui diversas funções, tendo o mapeamento de plantações como um dos seus principais, porém ele também ajuda na localização de amostras do solo, coleta e análise de dados da plantação, com isso essa tecnologia melhora a qualidade dos processos agrícolas.</p>
             </article>
 
-            <article class="card agro-card">
+            <article class="cartao">
                 <h2>Robôs</h2>
-                <p>Os Robôs na agricultura ajudam de forma auxiliar e agiliza o processo, por ser algo mais prático, esses Robôs são máquinas autônomas controladas remotamente, ele permite o armazenamento de uma variedade de dados e coleta, entre eles índices de acidez do solo, umidade, níveis de nutrientes, históricos do campo e condições climáticas, podendo sugerir alterações no plantio para um melhor resultado, a partir dos dados coletados.
-                </p>
+                <p>Os Robôs na agricultura ajudam de forma auxiliar e agiliza o processo, por ser algo mais prático, esses Robôs são máquinas autônomas controladas remotamente, ele permite o armazenamento de uma variedade de dados e coleta, entre eles índices de acidez do solo, umidade, níveis de nutrientes, históricos do campo e condições climáticas, podendo sugerir alterações no plantio para um melhor resultado, a partir dos dados coletados.</p>
             </article>
 
         </section>
