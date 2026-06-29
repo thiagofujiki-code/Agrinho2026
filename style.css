@@ -55,7 +55,7 @@ body {
 input[type="text"] {
     flex: 1;
     padding: 10px;
-    border: 2px solid var(--titulo-botao)
+    border: 2px solid var(--titulo-botao);
     background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
