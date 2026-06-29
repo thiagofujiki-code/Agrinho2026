@@ -1,6 +1,6 @@
-:root {
+ :root {
     --fundo-tela: gray !important; /*cinza*/
-    --fundo-bloco: #ff6600!important;/* laranja*/
+    --fundo-bloco: #ff6600 !important; /* laranja*/
     --texto: #333333;
     --titulo-botao: #212529;
 }
@@ -8,9 +8,10 @@
 .dark-mode {
     --fundo-tela: #0d1117;    /* Fundo escuro */
     --fundo-bloco: #21262d;   /* cinza médio */
-    --texto: #c9d1d9;      /* Texto claro */
-    --titulo-botao: #2ecc71; /* Verde destacado para o modo escuro */
+    --texto: #c9d1d9;         /* Texto claro */
+    --titulo-botao: #2ecc71;  /* Verde destacado para o modo escuro */
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--fundo-tela);
@@ -22,17 +23,22 @@ body {
 }
 
 
-.main-header {
+.cabecalho-principal {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.main-header h1 {
+.cabecalho-principal h1 {
     color: var(--titulo-botao);
 }
 
 
-.card, .bloco {
+.conteiner {
+
+}
+
+
+.cartao {
     background-color: var(--fundo-bloco);
     padding: 20px;
     margin-bottom: 20px;
@@ -40,22 +46,23 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Formulário de pergunta e resposta */
-.form-label {
+
+.rotulo-formulario {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.input-group {
+
+.grupo-entrada {
     display: flex;
     gap: 10px;
 }
 
 input[type="text"] {
     flex: 1;
-    padding: 10px;
-    border: 2px solid var(--titulo-botao) /*laranja escuro*/
+    padding: 10px
+    border: 2px solid var(--titulo-botao); 
     background-color: var(--fundo-bloco);
     color: var(--texto);
     transition: background-color 0.3s ease;
@@ -73,35 +80,38 @@ button:hover {
     opacity: 0.85; 
 }
 
-.btn-primary {
+.btn-primario {
     background-color: var(--titulo-botao);
     color: white;
+
+.btn-secundario {
+    
 }
 
-.btn-accent {
+.btn-destaque {
     background-color: darkgreen; /* verde escuro */
     color: white;
     margin-top: 15px;
     width: 100%;
 }
 
-.hidden-element {
+.elemento-oculto {
     display: none;
 }
 
-#dynamic-response {
+
+#resposta-dinamica {
     margin-top: 15px;
     text-align: center;
 }
-}
+
 
 @media (max-width: 600px) {
-    .input-group {
+    .grupo-entrada {
         flex-direction: column;
     }
 }
 
 input {
-    color: #000000 !important;/* Força o texto digitado a ficar preto */
+    color: #000000 !important; /* Força o texto digitado a ficar preto */
 }
-
