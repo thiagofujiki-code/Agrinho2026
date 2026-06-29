@@ -22,7 +22,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .cabecalho-principal {
     text-align: center;
     margin-bottom: 20px;
@@ -32,13 +31,11 @@ body {
     color: var(--titulo-botao);
 }
 
-
 .conteiner {
-
+    
 }
 
-
-.cartao {
+.cartao, .cartao-agro {
     background-color: var(--fundo-bloco);
     padding: 20px;
     margin-bottom: 20px;
@@ -46,13 +43,11 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-
 .rotulo-formulario {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 
 .grupo-entrada {
     display: flex;
@@ -61,7 +56,7 @@ body {
 
 input[type="text"] {
     flex: 1;
-    padding: 10px
+    padding: 10px;
     border: 2px solid var(--titulo-botao); 
     background-color: var(--fundo-bloco);
     color: var(--texto);
@@ -83,9 +78,10 @@ button:hover {
 .btn-primario {
     background-color: var(--titulo-botao);
     color: white;
+}
 
 .btn-secundario {
-    
+    /* Mantém as propriedades padrões dos botões */
 }
 
 .btn-destaque {
@@ -99,12 +95,10 @@ button:hover {
     display: none;
 }
 
-
 #resposta-dinamica {
     margin-top: 15px;
     text-align: center;
 }
-
 
 @media (max-width: 600px) {
     .grupo-entrada {
