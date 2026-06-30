@@ -1,7 +1,7 @@
 O tema do Agrinho "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"  tem como objetivo principal mostrar a importância de produzir alimentos e energia de forma eficiente, para conseguirmos garantir a preservação dos recursos naturais.
 
-​1. Objetivo do Projeto:
-​O objetivo principal deste projeto é informar a sociedade sobre o papel fundamental que a tecnologia desempenha na agricultura moderna. O site demonstra como funciona as principais tecnologias atuais do campo, mostrando que elas elevam a produtividade.
+​1. Objetivo:
+​O objetivo principal deste site é informar a sociedade sobre o papel fundamental que a tecnologia desempenha na agricultura moderna. O site demonstra como funciona as principais tecnologias atuais do campo, mostrando que elas elevam a produtividade.
 
 2. Justificativa:
 O site foi criado pensando no tema do agrinho 2026, que diz: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente, neste tema ele cita o equilíbrio entre a produção e o meio ambiente, e para alcançar este equilíbrio, as Tecnologias do agro atualmente sao fundamentais, pois com elas pode ser reduzido a quantidade de recursos naturais perdidos e além de que o agricultor protege mais o meio ambiente, pois ele usa drones para aplicação de produtos, e estes drones conseguem identificar exatamente os locais que precisam, evitando prejudicar áreas da natureza
